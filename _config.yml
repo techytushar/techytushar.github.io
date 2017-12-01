@@ -9,7 +9,7 @@ plugins: [jekyll-paginate]
 port: 3000
 safe: true
 
-url: http://techytushar.github.io/
+url: http://techytushar.github.io
 baseurl: /
 title: Tushar Mittal
 author: Tushar Mittal
