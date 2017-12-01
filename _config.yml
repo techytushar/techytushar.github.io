@@ -10,7 +10,7 @@ port: 3000
 safe: true
 
 url: http://techytushar.github.io/
-baseurl: /sustain/
+baseurl: /
 title: Tushar Mittal
 author: Tushar Mittal
 description: Personal blog and resume website.
