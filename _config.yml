@@ -20,7 +20,7 @@ github: techytushar # username
 twitter: techy_tushar
 linkedin: tusharmit
 stackoverflow: users/5679285/tushar-mittal
-google_analytics: UA-69391421-1
+google_analytics: UA-110551930-1
 
 # for travis
 exclude: [vendor]
