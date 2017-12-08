@@ -62,10 +62,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
     integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
     crossorigin="anonymous"></script>
+    <script src = "{{site.baseurl}}static/js/pxbWriter.js"></script>
+    <script>
+      var targetWriter = new Writer($("#target"), $("#target-cursor"), $("#target-mark"), 100, false, false, 0);
+      targetWriter.setMark(">");
+      targetWriter.write(" Tushar Mittal ", 0);
+      targetWriter.setCursor("_");
+      setInterval(function(){
+    targetWriter.animateCursor(600);
+}, 0);
+    </script>
+<script>
+$("#test1").delay(2000).animate({"opacity":"1"},500);
+$("#test2").delay(2500).animate({"opacity":"1"},500)
+$("#test3").delay(3000).animate({"opacity":"1"},500);
+$("#test4").delay(3500).animate({"opacity":"1"},500);
+$("#test5").delay(4000).animate({"opacity":"1"},500);
+</script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="{{ site.baseurl }}static/js/docs.min.js"></script>
     <script src="{{ site.baseurl }}static/js/main.js"></script>
- <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{ site.baseurl }}static/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
