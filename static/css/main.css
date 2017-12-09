@@ -187,24 +187,7 @@ div.footer{
   
 }*/
 
-/* To fade in the text on main page
-.hidden{
-  display:none;
-}
-#test{
-    opacity: 0;
-    
-    -webkit-transition: opacity 1s ease-in;
-       -moz-transition: opacity 1s ease-in;
-        -ms-transition: opacity 1s ease-in;
-         -o-transition: opacity 1s ease-in;
-            transition: opacity 1s ease-in;
-}
-
-.load {
-    opacity: 1;
-}
-*/
+/* To fade in the text on main page*/
 #test1, #test2, #test3, #test4, #test5{
   opacity: 0;
 }
