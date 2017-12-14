@@ -203,3 +203,14 @@ div.footer{
 #target-mark{
   font-size: 30px;
 }
+
+/*
+canvas{
+  vertical-align: bottom;
+  z-index:1;
+  position:absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;  
+  }
+*/
