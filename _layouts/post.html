@@ -23,7 +23,7 @@ layout: layout
 			  {{ content }}
 			   <hr>
 			   <div class="related-posts">
-				   <h5>Related Posts</h5>
+				   <h5><b>Related Posts</b></h5>
 				   {% for post in site.related_posts limit:3 %}
 						<div class="row">
 							 <div class="col-sm-4 col-md-4 col-lg-4">
@@ -41,6 +41,9 @@ layout: layout
 			   </div>
 			</div>
 		</div>
+	</div>
+	<div class = "panel" style = "padding-bottom: 10px; padding-top: -20px;">
+			<h3> <a href = "{{ site.baseurl }}subscribe.html">Subscribe </a>to the mailing list</h3>
 	</div>
 	  {% include disqus.html %}
 </div>

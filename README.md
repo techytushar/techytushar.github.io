@@ -1,2 +1,2 @@
 # techytushar.github.io
-Personal Website
+Personal blog and portfolio website.
