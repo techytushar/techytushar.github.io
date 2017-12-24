@@ -17,7 +17,7 @@
 </url>
 <url>
   <loc>http://techytushar.github.io/events.html</loc>
-  <priority>0.8</priority>
+  <priority>0.5</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
@@ -28,6 +28,16 @@
 <url>
   <loc>http://techytushar.github.io/post1.html</loc>
   <priority>0.8</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/post2.html</loc>
+  <priority>1</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/subscribe.html</loc>
+  <priority>0.5</priority>
   <changefreq>weekly</changefreq>
 </url>
 <url>
