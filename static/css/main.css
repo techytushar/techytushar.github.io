@@ -188,7 +188,7 @@ div.footer{
 }*/
 
 /* To fade in the text on main page*/
-#test1, #test2, #test3, #test4, #test5{
+#test1, #test2, #test3, #test4, #test5, #test6{
   opacity: 0;
 }
 .name{
@@ -204,13 +204,3 @@ div.footer{
   font-size: 30px;
 }
 
-/*
-canvas{
-  vertical-align: bottom;
-  z-index:1;
-  position:absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;  
-  }
-*/
