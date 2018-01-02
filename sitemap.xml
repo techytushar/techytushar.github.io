@@ -36,6 +36,11 @@
   <changefreq>weekly</changefreq>
 </url>
 <url>
+  <loc>http://techytushar.github.io/post3.html</loc>
+  <priority>1</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
   <loc>http://techytushar.github.io/subscribe.html</loc>
   <priority>0.5</priority>
   <changefreq>weekly</changefreq>
