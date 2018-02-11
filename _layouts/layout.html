@@ -86,12 +86,14 @@ $("#test6").delay(4500).animate({"opacity":"1"},500);
 </script>
 <script>
   var img_url = "{{ site.baseurl }}static/img/loadingEllipsis.gif";
+  var check = false;
   //to get the reply from the bot.
   function getReply(text){
     $(".chat-message-box").append("<div class='message'><p class='message-box send'>"+text+"</p></div>");
     $(".chat-message-box").append("<img src='"+img_url+"' class='chat-loading'>");
     updateScroll();
     var body = {"user":"UlhYTbP21igAIFha","key":"R8tMQ3wi0kqDDupIkemoe2uRilyLf2mE","text":text}
+    check = true;
     $.ajax({
       type:'POST',
       async:true,
@@ -102,15 +104,18 @@ $("#test6").delay(4500).animate({"opacity":"1"},500);
         if(data.status=="success"){
           $(".chat-loading").remove();
           $(".chat-message-box").append("<div class='message'><p class='message-box receive'>"+data.response+"</p></div>");
+          check=false;
         }
         else{
           $(".chat-loading").remove();
           $(".chat-message-box").append("<div class='message'><p class='message-box receive'>"+"Sorry, techytushar is offline."+"</p></div>");
+          check=false;
         }
       },
       error:function(data){
         $(".chat-loading").remove();
         $(".chat-message-box").append("<div class='message' style='background-color:rgb(252, 77, 77);'><p class='message-box receive'>"+"Some error occured."+"</p></div>");
+        check=false;
       }
     })
     updateScroll();
@@ -130,7 +135,7 @@ $("#test6").delay(4500).animate({"opacity":"1"},500);
   });
     $(".chat-button").on("click",function(){
       var text = document.querySelector(".chat-message").value;
-      if(text){
+      if(text && check==false){
         $(".chat-message-box").css("display","block");
         document.querySelector(".chat-message").value="";
         document.querySelector(".chat-message").focus();

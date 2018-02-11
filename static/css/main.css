@@ -217,10 +217,11 @@ div.footer{
   font-size:25px;
 }
 .chat-message-box{
-  display:none;
+  display:block;
   background-color:#e3e3e3;
   border-radius:3%; 
-  width:400px;
+  width:50%;
+  min-width: 200px;
   height:200px;
   max-height:200px;
   padding:10px 0;
