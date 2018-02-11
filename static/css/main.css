@@ -217,7 +217,7 @@ div.footer{
   font-size:25px;
 }
 .chat-message-box{
-  display:block;
+  display:none;
   background-color:#e3e3e3;
   border-radius:3%; 
   width:50%;
@@ -250,4 +250,8 @@ div.footer{
 .chat-loading{
   height:50px;
   widht:50px;
+}
+
+input{
+  margin-top:10px;
 }
