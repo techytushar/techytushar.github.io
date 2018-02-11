@@ -204,3 +204,49 @@ div.footer{
   font-size: 30px;
 }
 
+/* Chat Page 
+-------------------------------------------------- */
+.chat-avatar {
+  padding-top: 0%;
+}
+.chat-img-circle{
+  height:150px !important;
+  width:150px !important;
+}
+.chat-title{
+  font-size:25px;
+}
+.chat-message-box{
+  display:none;
+  background-color:#e3e3e3;
+  border-radius:3%; 
+  width:400px;
+  height:200px;
+  max-height:200px;
+  padding:10px 0;
+  margin: 2% auto !important;
+  overflow:scroll;
+}
+.message{
+  display:block;
+  width:90%;
+  font-size:18px;
+  margin:2px auto;
+}
+.message-box{
+  border-radius:10px;
+  border: 1px solid #d1d1d1;
+  padding:10px;
+}
+.send{
+  background-color:#dbe9d8;
+  text-align: left;
+}
+.receive{
+  background-color: #c2d4d8;
+  text-align: right;  
+}
+.chat-loading{
+  height:50px;
+  widht:50px;
+}

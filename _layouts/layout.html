@@ -84,7 +84,61 @@ $("#test5").delay(4000).animate({"opacity":"1"},500);
 $("#test6").delay(4500).animate({"opacity":"1"},500);
 });
 </script>
+<script>
+  var img_url = "{{ site.baseurl }}static/img/loadingEllipsis.gif";
+  //to get the reply from the bot.
+  function getReply(text){
+    $(".chat-message-box").append("<div class='message'><p class='message-box send'>"+text+"</p></div>");
+    $(".chat-message-box").append("<img src='"+img_url+"' class='chat-loading'>");
+    updateScroll();
+    var body = {"user":"UlhYTbP21igAIFha","key":"R8tMQ3wi0kqDDupIkemoe2uRilyLf2mE","text":text}
+    $.ajax({
+      type:'POST',
+      async:true,
+      crossDomain:true,
+      url:"https://cleverbot.io/1.0/ask",
+      data:body,
+      success:function(data){
+        if(data.status=="success"){
+          $(".chat-loading").remove();
+          $(".chat-message-box").append("<div class='message'><p class='message-box receive'>"+data.response+"</p></div>");
+        }
+        else{
+          $(".chat-loading").remove();
+          $(".chat-message-box").append("<div class='message'><p class='message-box receive'>"+"Sorry, techytushar is offline."+"</p></div>");
+        }
+      },
+      error:function(data){
+        $(".chat-loading").remove();
+        $(".chat-message-box").append("<div class='message' style='background-color:rgb(252, 77, 77);'><p class='message-box receive'>"+"Some error occured."+"</p></div>");
+      }
+    })
+    updateScroll();
+  }
+  //to keep the scroll to the bottom.
+  function updateScroll(){
+    var element = document.getElementById("chat-message-box");
+    element.scrollTop = element.scrollHeight;
+}
 
+ //calling the function when button is clicked.
+  $(document).ready(function(){
+    $(".chat-message").keyup(function(event) {
+    if (event.keyCode === 13) {
+        $(".chat-button").click();
+    }
+  });
+    $(".chat-button").on("click",function(){
+      var text = document.querySelector(".chat-message").value;
+      if(text){
+        $(".chat-message-box").css("display","block");
+        document.querySelector(".chat-message").value="";
+        document.querySelector(".chat-message").focus();
+        getReply(text);
+      }
+    })
+  })
+</script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="{{ site.baseurl }}static/js/docs.min.js"></script>
     <script src="{{ site.baseurl }}static/js/main.js"></script>
