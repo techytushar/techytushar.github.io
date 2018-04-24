@@ -99,6 +99,7 @@ $("#test6").delay(4500).animate({"opacity":"1"},500);
       type:'POST',
       async:true,
       crossDomain:true,
+      dataType: "json",
       url:"https://cleverbot.io/1.0/ask",
       data:body,
       success:function(data){
