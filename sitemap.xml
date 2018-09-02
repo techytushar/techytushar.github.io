@@ -37,6 +37,11 @@
 </url>
 <url>
   <loc>http://techytushar.github.io/post2.html</loc>
+  <priority>0.8</priority>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/post3.html</loc>
   <priority>1</priority>
   <changefreq>daily</changefreq>
 </url>
@@ -46,8 +51,28 @@
   <changefreq>daily</changefreq>
 </url>
 <url>
-  <loc>http://techytushar.github.io/post3.html</loc>
+  <loc>http://techytushar.github.io/post5.html</loc>
   <priority>1</priority>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/post6.html</loc>
+  <priority>0.8</priority>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/post7.html</loc>
+  <priority>0.8</priority>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/post8.html</loc>
+  <priority>0.8</priority>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/post9.html</loc>
+  <priority>0.8</priority>
   <changefreq>daily</changefreq>
 </url>
 <url>
