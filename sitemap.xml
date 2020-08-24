@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>https://techytushar.github.io</loc>
   <priority>1.0</priority>
@@ -74,6 +74,21 @@
   <loc>http://techytushar.github.io/post9.html</loc>
   <priority>0.8</priority>
   <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/post10.html</loc>
+  <priority>1</priority>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/post11.html</loc>
+  <priority>1</priority>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://techytushar.github.io/post12.html</loc>
+  <priority>1</priority>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://techytushar.github.io/subscribe.html</loc>
